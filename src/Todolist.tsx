@@ -1,6 +1,6 @@
 import React, {ChangeEvent} from 'react';
 import {FilterValuesType} from './App';
-import {AddItemForm} from './AddItemFor';
+import {AddItemForm} from './AddItemForms';
 import {EditableSpan} from './EditableSpan';
 import {Button, Checkbox, IconButton} from "@mui/material";
 import {Delete} from "@mui/icons-material";
@@ -77,9 +77,10 @@ export function Todolist(props: PropsType) {
                 })
             }
         </div>
-        <div style={{ paddingTop: "10px"}}>
+        <div>
             <Button variant={props.filter === 'all' ? 'outlined' : 'text'}
                     onClick={onAllClickHandler}
+
             >All
             </Button>
             <Button variant={props.filter === 'active' ? 'outlined' : 'text'}
