@@ -30,8 +30,7 @@ type ActionsType =
 export let todolistId1 = v1();
 export let todolistId2 = v1();
 const initialState: Array<TodolistType> = [
-    {id: todolistId1, title: "What to learn", filter: "all"},
-    {id: todolistId2, title: "What to buy", filter: "all"}
+
 ]
 
 
